@@ -34,11 +34,12 @@ app.use(express.static('public'));
 //Defini a rota principal
 //Enviando o arquivo index.html
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname + '/public/post/post.html);
 })
 
 //Inicia o servidor na porta definida e exibe uma mensagem no console
 server.listen(porta, () => {
     console.log(`JSON SERVER está rodando em http://localhost:${porta}`);
 })
+
 
